@@ -13,26 +13,18 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
-model productos {
-  nombre String @id
-  precio Float
-  cantidad Int
+
+model Tarea {
+  id    String @id @default(uuid())
+  titulo  String
+  descripcion String
+  path String @unique
 }
-model ventas {
-  id Int @id @default(autoincrement())
-  producto String
-  cantidad Int
-  total Float
-}
-model usuarios {
-  id Int @id @default(autoincrement())
-  nombre String
-  email String @unique
-  password String
-}
-model admin {
-  id Int @id @default(autoincrement())
-  nombre String
-  email String @unique
-  password String
+
+model Productos {
+  id    String @id @default(uuid())
+  nombre  String
+  precio  Float
+  descripcion String
+  path String @unique
 }

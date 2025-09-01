@@ -1,18 +1,27 @@
 {
-  "name": "bibleoteca",
+  "name": "pdi-entregas-local",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "A.A.P.C",
+  "author": "",
   "license": "ISC",
-  "description": "Repositorio de Bibleoteca de A.A.P.C",
-  "type": "module",
+  "description": "",
   "dependencies": {
     "@prisma/client": "^6.15.0",
-    "express": "^5.1.0"
+    "@vercel/node": "^5.3.17",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "esbuild": "^0.25.9",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.14.3",
+    "nodemon": "^3.1.10",
+    "path-to-regexp": "^8.2.0"
   },
   "devDependencies": {
     "prisma": "^6.15.0"

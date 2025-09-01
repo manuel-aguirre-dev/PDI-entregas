@@ -1,13 +1,10 @@
-import express from "express"
-import registerRoutes from './routes/index.js'
+import express from 'express';
+import productosRoutes from './routes/productos.routes.js'; // Importamos el router
 
-const servidor = express();
+const app = express();
 
-servidor.use(express.json());
+app.use('/productos', productosRoutes)
 
-registerRoutes(servidor);
-
-servidor.listen(3000, () =>{
-console.log("El servidor esta en el puerto 3000");
+app.listen(3000, function () {
+  console.log('Servidor escuchando en el puerto 3000');
 });
-
